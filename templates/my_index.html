@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+
+    <body>
+        <div>
+            <p>Ennui locavore heirloom banh mi art party sriracha. Photo booth salvia forage raw denim seitan ethical. Heirloom Truffaut gluten-free, XOXO cred mustache crucifix. Marfa taxidermy dreamcatcher semiotics retro mixtape, Pinterest skateboard. Lumbersexual American Apparel Vice, readymade literally actually squid direct trade dreamcatcher Etsy ennui. Paleo VHS tote bag, meditation tilde mixtape chillwave. Pug meditation cardigan Pitchfork iPhone.</p>
+
+            <p>Bitters salvia Odd Future, Carles post-ironic small batch Echo Park sriracha Banksy Shoreditch Williamsburg kogi cred. Narwhal chillwave forage, Austin 8-bit before they sold out Echo Park chia McSweeney's biodiesel Thundercats Portland selvage retro taxidermy. YOLO wayfarers pug hoodie, PBR sriracha banh mi keytar fingerstache semiotics shabby chic pickled. Church-key Wes Anderson Vice blog 8-bit banh mi cronut selvage mustache master cleanse. Blue Bottle flannel ugh, readymade art party cliche photo booth hella scenester quinoa twee. Artisan normcore meditation semiotics, cronut mixtape fixie heirloom tote bag migas PBR&B squid you probably haven't heard of them. Pork belly Williamsburg dreamcatcher freegan migas.</p>
+
+            <form action="/say_hi">
+                <label>Name: <input name="name" type="text"></label>
+                <input type="Submit" value="Say Hi to me"></input>
+            </form>
+        </div>
+        <div>
+            {% if g.ip == '127.0.0.1' %}
+                Looks like you're running this on localhost.
+            {% endif %}
+
+            {% if g.now %}
+                {{g.now}}
+            {% endif %}
+        </div>
+    </body>
+
+</html>

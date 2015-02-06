@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+
+    <body>
+
+	{% if g.name %}
+	   <h1>Hi, {{g.name}}</h1>
+	{% endif %}
+
+        <div>
+		    <img src="http://placekitten.com/g/200/300">
+        </div>
+        <div>
+            {% if g.ip == '127.0.0.1' %}
+                Looks like you're running this on localhost.
+            {% endif %}
+        </div>
+    </body>
+
+</html>
