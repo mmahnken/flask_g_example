@@ -19,7 +19,7 @@ Does it output this a path to this directory and then /env/pip? If so, move on.
 
 ###Install requirements into your env
 Run
-`pip install requirements.txt`
+`pip install -r requirements.txt`
 
 ### Start your server
 Run 
